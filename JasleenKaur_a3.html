@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tim hortons</title>
+<style>
+ 
+body {
+        background-color:yellow;
+     }
+ 
+#i1 {
+      position:absolute;
+	  left:30px;
+	  top:50px;
+	  height:300px;
+	  width:300px;
+	  
+	  }
+#i2   {
+      position:absolute;
+	  left:930px;
+	  top:50px;
+	  height:300px;
+	  width:300px;
+	  }
+form { position:absolute;
+       top:400px;
+	   left:15px;
+	   }
+	   
+#a6 {
+    position:absolute;
+	left:1000px;
+	}
+#a7 {
+      position:absolute;
+	  left:900px;
+	  }
+</style>
+</head>
+<body>
+<h1 style="color:Red;text-align:center;font-family:Monotype Corsiva;font-size:45px;">Tim Hortons<h1>
+<h2 style="color:Red;text-align:center;font-family:Monotype Corsiva;font-size:40px">Welcome to Tim Hortons.!
+<h3 style="color:Red;position:absolute;top:345px;left:15px;">Give us your order</h3>
+<img id="i1" src="cup.jpg"/>
+<img id="i2" src="cup.jpg"/>
+<form action="JasleenKaur_a3.php" method="POST">
+ 
+<label>Name:
+<input type="text" id="a1" name="fname" value="" required />
+</label><br><br>
+<label> Number of coffee's: 
+<input type="number" name="num1" min="0" step="1" required />
+</label><br><br>
+<label> Cup size:
+<select id="a4" name="sizes">
+ <option value="small">Small</option>
+ <option value="medium">Medium</option>
+ <option value="large">Large</option>
+ <option value="xlarge">X-Large</option>
+ </select>
+ </label><br><br>
+ <label>How many creams?
+ <input type="number" name="num2" required />
+ </label><br><br>
+ <label>How many sugar packets?
+ <input type="number" name="num3" required />
+ </label>
+ <input type="submit" id="a6" value="ORDER COFFEE"/>
+  <input type="reset" id="a7" value="RESET"/>
+
+ 
+ </form>
+</body>
+</html>
